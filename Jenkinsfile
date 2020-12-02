@@ -13,11 +13,8 @@ pipeline {
             }	            
             stage ("three") {    
                 steps {       
-            	echo "this is the three" 
-		pwd
-		whomai
-		dokcer ps -a
-		time
+            	echo "this is the three" && whoami
+		
             	}
             }            
         }      
