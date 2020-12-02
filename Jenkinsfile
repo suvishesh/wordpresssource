@@ -8,7 +8,7 @@ pipeline {
             }            
 	       stage ("two") {    
                 steps {       
-                sh "docker ps -a"    
+                sh "ls -a"    
                 }
             }	            
             stage ("three") {    
