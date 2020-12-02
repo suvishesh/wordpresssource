@@ -3,19 +3,18 @@ pipeline {
         stages {    
             stage ("first") {    
                 steps {       
-                echo "this is the first"    
+                pwd   
                 }
             }            
 	       stage ("two") {    
                 steps {       
-                echo "this is the two"    
+                docker ps -a    
                 }
             }	            
             stage ("three") {    
                 steps {       
-            	echo "this is the three" && whoami
-		
-            	}
+            	whoami
+		}
             }            
         }      
 }
