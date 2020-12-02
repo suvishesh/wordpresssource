@@ -3,17 +3,17 @@ pipeline {
         stages {    
             stage ("first") {    
                 steps {       
-                pwd   
+                sh "pwd"   
                 }
             }            
 	       stage ("two") {    
                 steps {       
-                docker ps -a    
+                sh "docker ps -a"    
                 }
             }	            
             stage ("three") {    
                 steps {       
-            	whoami
+            	sh "whoami"
 		}
             }            
         }      
